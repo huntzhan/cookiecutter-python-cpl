@@ -56,6 +56,14 @@ setup(
     ],
     # critical configurations.
     packages=find_packages(),
+
+    package_data={
+        '{{cookiecutter.repo_name}}': [
+            '{{cookiecutter.repo_name}}/{{cookiecutter.target_name}}',
+        ],
+    },
+    include_package_data=True,
+
     install_requires=load_requirements('requirements.txt'),
     entry_points={
         'console_scripts': [
