@@ -15,3 +15,5 @@ EMAILS = [
 LICENSE = ''
 URL = ''
 DESCRIPTION = '{{cookiecutter.short_description}}'
+
+TARGET_NAME = '{{cookiecutter.target_name}}'

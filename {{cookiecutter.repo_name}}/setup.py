@@ -59,7 +59,7 @@ setup(
     install_requires=load_requirements('requirements.txt'),
     entry_points={
         'console_scripts': [
-            '{{cookiecutter.repo_name}}_cli = {{cookiecutter.repo_name}}.main:entry_point'
+            '{{cookiecutter.repo_name}}_deploy = {{cookiecutter.repo_name}}.main:deploy'
         ],
     },
 )

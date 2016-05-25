@@ -5,7 +5,21 @@ from __future__ import (
 from builtins import *                  # noqa
 from future.builtins.disabled import *  # noqa
 
+from os import getcwd
+from os.path import dirname, join
 
-def entry_point():
-    print("entry_point")
-    return 42
+from cpl import replace
+
+from {{cookiecutter.repo_name}}.metadata import TARGET_NAME
+
+
+def deploy():
+    src = join(
+        dirname(__file__),
+        TARGET_NAME,
+    )
+    dst = join(
+        getcwd(),
+        TARGET_NAME,
+    )
+    replace(src, dst)

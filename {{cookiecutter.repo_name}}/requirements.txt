@@ -10,3 +10,4 @@ pytest-travis-fold
 coveralls
 
 future
+cpl
